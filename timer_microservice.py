@@ -23,12 +23,11 @@ def process_string(input_message):
         average_time = round(average_time)
         minutes = elapsed_time / 60
         minutes = round(minutes)
-        return f"{elapsed_time} {average_time} {minutes}"
+        socket.send_string(f"{elapsed_time} {average_time} {minutes}")
     except:
-        return "Error"
+        socket.send_string("Error")
 
 while True:
     message = socket.recv_string()
-    response_string = process_string(message)
-    socket.send_string(response_string)
+    process_string(message)
 
