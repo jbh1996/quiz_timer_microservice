@@ -7,6 +7,11 @@ socket.bind("tcp://*:5555")
 
 
 def process_string(input_message):
+    """
+    Processes input string and returns elapsed time in seconds,
+    average time in seconds
+    and minutes as concatenated string separated by a space
+    """
     working_array = input_message.split()
     flashcards = int(working_array[0])
     start_time = float(working_array[1])
