@@ -30,5 +30,6 @@ def process_string(input_message):
 
 while True:
     message = socket.recv_string()
+    print(f"Received Message: {message}")
     process_string(message)
 
