@@ -9,6 +9,7 @@
 <img width="553" alt="image" src="https://github.com/user-attachments/assets/0f28b928-5af5-4349-968a-51c9eb6b12cf" /></p>
 
 <p>UML Diagram:
-<img width="1339" alt="image" src="https://github.com/user-attachments/assets/6c1b35e5-f945-4353-9a7d-0684e2e150ba" /></p>
+<img width="1677" alt="image" src="https://github.com/user-attachments/assets/7f4e926c-a3ba-43be-a48c-985678d68468" />
+</p>
 
 
