@@ -12,18 +12,20 @@ def process_string(input_message):
     average time in seconds
     and minutes as concatenated string separated by a space
     """
-    working_array = input_message.split()
-    flashcards = int(working_array[0])
-    start_time = float(working_array[1])
-    cur_time = time.time()
-    elapsed_time = cur_time - start_time
-    elapsed_time = round(elapsed_time)
-    average_time = elapsed_time / flashcards
-    average_time = round(average_time)
-    minutes = elapsed_time / 60
-    minutes = round(minutes)
-    return f"{elapsed_time} {average_time} {minutes}"
-
+    try:
+        working_array = input_message.split()
+        flashcards = int(working_array[0])
+        start_time = float(working_array[1])
+        cur_time = time.time()
+        elapsed_time = cur_time - start_time
+        elapsed_time = round(elapsed_time)
+        average_time = elapsed_time / flashcards
+        average_time = round(average_time)
+        minutes = elapsed_time / 60
+        minutes = round(minutes)
+        return f"{elapsed_time} {average_time} {minutes}"
+    except:
+        return "Error"
 
 while True:
     message = socket.recv_string()
