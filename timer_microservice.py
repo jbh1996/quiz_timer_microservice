@@ -27,6 +27,7 @@ def process_string(input_message):
     except:
         socket.send_string("Error")
 
+
 while True:
     message = socket.recv_string()
     process_string(message)
